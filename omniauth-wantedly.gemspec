@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "omniauth-wantedly"
   spec.version       = Omniauth::Wantedly::VERSION
   spec.authors       = ["Yoshinori Kawasaki"]
-  spec.email         = ["ykawasaki@gmail.com"]
+  spec.email         = ["yoshi@wantedly.com"]
 
   spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
   spec.description   = %q{TODO: Write a longer description or delete this line.}
