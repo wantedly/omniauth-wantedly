@@ -1,15 +1,14 @@
-# Omniauth::Wantedly
+# OmniAuth::Wantedly
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/omniauth/wantedly`. To experiment with that code, run `bin/console` for an interactive prompt.
+Wantedly OAuth2 Strategy for OmniAuth gem.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'omniauth-wantedly'
+gem 'omniauth-wantedly', github: 'wantedly/omniauth-wantedly'
 ```
 
 And then execute:
@@ -22,7 +21,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+use OmniAuth::Builder do
+    provider :wantedly, ENV["WANTEDLY_APP_ID"], ENV["WANTEDLY_APP_SECRET"]
+end
+```
+
+Or, with Devise:
+
+```ruby
+  config.omniauth :wantedly, ENV["WANTEDLY_APP_ID"], ENV["WANTEDLY_APP_SECRET"]
+```
+
 
 ## Development
 
@@ -32,5 +42,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/omniauth-wantedly.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/wantedly/omniauth-wantedly.
