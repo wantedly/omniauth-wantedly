@@ -5,7 +5,7 @@ require 'omniauth/wantedly/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "omniauth-wantedly"
-  spec.version       = Omniauth::Wantedly::VERSION
+  spec.version       = OmniAuth::Wantedly::VERSION
   spec.authors       = ["Yoshinori Kawasaki"]
   spec.email         = ["yoshi@wantedly.com"]
 
